@@ -26,5 +26,5 @@ Currently available shortcuts:
 
 Comments and contributions are welcome. Just fork and do a pull request.
 
-Created by Carsten Sandter (@casarock). 
+Created by Carsten Sandter ([@casarock](http://www.twitter.com/casarock)). 
 License: MIT
