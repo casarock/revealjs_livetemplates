@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="Reveal">
-  <template name="slcode" value="&lt;section&gt;&#10;    &lt;h2&gt;$HEADLINE$&lt;/h2&gt;&#10;    &lt;p&gt;$$DESCRIPTION$&lt;/p&gt;&#10;    &lt;pre&gt;&lt;code data-trim contenteditable&gt;&#10;$CODE$&#10;    &lt;/code&gt;&lt;/pre&gt;&#10;&lt;/section&gt;" description="Section for Code" toReformat="false" toShortenFQNames="true">
+  <template name="slcode" value="&lt;section id=&quot;$ID$&quot;&gt;&#10;    &lt;h2&gt;$HEADLINE$&lt;/h2&gt;&#10;    &lt;p&gt;$$DESCRIPTION$&lt;/p&gt;&#10;    &lt;pre&gt;&lt;code data-trim contenteditable&gt;&#10;$CODE$&#10;    &lt;/code&gt;&lt;/pre&gt;&#10;&lt;/section&gt;" description="Section for Code" toReformat="false" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="HEADLINE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="CODE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -8,7 +9,8 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="sltitle" value="&lt;section&gt;&#10;    &lt;h1&gt;$HEADER$&lt;/h1&gt;&#10;    &lt;h3&gt;$SUBHEDER$&lt;/h3&gt;&#10;    &lt;p&gt;&#10;        &lt;small&gt;$DISCLAIMER$&lt;/small&gt;&#10;    &lt;/p&gt;&#10;&lt;/section&gt;" description="Title Slide" toReformat="true" toShortenFQNames="true">
+  <template name="sltitle" value="&lt;section id=&quot;$ID$&quot;&gt;&#10;    &lt;h1&gt;$HEADER$&lt;/h1&gt;&#10;    &lt;h3&gt;$SUBHEDER$&lt;/h3&gt;&#10;    &lt;p&gt;&#10;        &lt;small&gt;$DISCLAIMER$&lt;/small&gt;&#10;    &lt;/p&gt;&#10;&lt;/section&gt;" description="Title Slide" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="HEADER" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="SUBHEDER" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="DISCLAIMER" expression="" defaultValue="" alwaysStopAt="true" />
@@ -17,7 +19,8 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="slnote" value="&lt;section&gt;&#10;    &lt;h2&gt;$HEADER$&lt;/h2&gt;&#10;    &lt;p&gt;&#10;        $CONTENT$&#10;    &lt;/p&gt;&#10;&#10;    &lt;aside class=&quot;notes&quot;&gt;&#10;        $SPEAKERNOTE$&#10;    &lt;/aside&gt;&#10;&lt;/section&gt;" description="Slide with a note" toReformat="true" toShortenFQNames="true">
+  <template name="slnote" value="&lt;section id=&quot;$ID$&quot;&gt;&#10;    &lt;h2&gt;$HEADER$&lt;/h2&gt;&#10;    &lt;p&gt;&#10;        $CONTENT$&#10;    &lt;/p&gt;&#10;&#10;    &lt;aside class=&quot;notes&quot;&gt;&#10;        $SPEAKERNOTE$&#10;    &lt;/aside&gt;&#10;&lt;/section&gt;" description="Slide with a note" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="HEADER" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="SPEAKERNOTE" expression="" defaultValue="" alwaysStopAt="true" />
@@ -26,7 +29,8 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="sllist" value="&lt;section&gt;&#10;    &lt;h2&gt;$HEADER$&lt;/h2&gt;&#10;    &lt;ul&gt;&#10;        &lt;li&gt;$LISTITEM1$&lt;/li&gt;&#10;        &lt;li&gt;$LISTITEM2$&lt;/li&gt;&#10;        &lt;li&gt;$LISTITEM3$&lt;/li&gt;&#10;    &lt;/ul&gt;&#10;&lt;/section&gt;" description="Slide with a unordered list" toReformat="true" toShortenFQNames="true">
+  <template name="sllist" value="&lt;section id=&quot;$ID$&quot;&gt;&#10;    &lt;h2&gt;$HEADER$&lt;/h2&gt;&#10;    &lt;ul&gt;&#10;        &lt;li&gt;$LISTITEM1$&lt;/li&gt;&#10;        &lt;li&gt;$LISTITEM2$&lt;/li&gt;&#10;        &lt;li&gt;$LISTITEM3$&lt;/li&gt;&#10;    &lt;/ul&gt;&#10;&lt;/section&gt;" description="Slide with a unordered list" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="HEADER" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="LISTITEM1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="LISTITEM2" expression="" defaultValue="" alwaysStopAt="true" />
@@ -36,7 +40,8 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="slidequote" value="&lt;section&gt;&#10;    &lt;h2&gt;$HEADER$&lt;/h2&gt;&#10;    &lt;p&gt;&#10;        $CONTENT$&#10;    &lt;/p&gt;&#10;    &lt;blockquote cite=&quot;$QUOTESOURCE$&quot;&gt;&#10;        &amp;ldquo;$QUOTE$&amp;rdquo;&#10;    &lt;/blockquote&gt;&#10;&lt;/section&gt;" description="A Slide with a blockquote" toReformat="true" toShortenFQNames="true">
+  <template name="slidequote" value="&lt;section id=&quot;$ID$&quot;&gt;&#10;    &lt;h2&gt;$HEADER$&lt;/h2&gt;&#10;    &lt;p&gt;&#10;        $CONTENT$&#10;    &lt;/p&gt;&#10;    &lt;blockquote cite=&quot;$QUOTESOURCE$&quot;&gt;&#10;        &amp;ldquo;$QUOTE$&amp;rdquo;&#10;    &lt;/blockquote&gt;&#10;&lt;/section&gt;" description="A Slide with a blockquote" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="HEADER" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="QUOTESOURCE" expression="" defaultValue="" alwaysStopAt="true" />
@@ -46,7 +51,8 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="slfragmented" value="&lt;section id=&quot;fragments&quot;&gt;&#10;    &lt;h2&gt;$HEADER$&lt;/h2&gt;&#10;    &lt;p&gt;$INTRODUCING$&lt;/p&gt;&#10;    &lt;p class=&quot;fragment&quot;&gt;$FRAGMENT1$&lt;/p&gt;&#10;    &lt;ul&gt;&#10;        &lt;li class=&quot;fragment&quot;&gt;$FRAGMENT2$&lt;/li&gt;&#10;    &lt;/ul&gt;&#10;&lt;/section&gt;" description="Slide with fragmented view" toReformat="true" toShortenFQNames="true">
+  <template name="slfragmented" value="&lt;section id=&quot;$ID$&quot;&gt;&#10;    &lt;h2&gt;$HEADER$&lt;/h2&gt;&#10;    &lt;p&gt;$INTRODUCING$&lt;/p&gt;&#10;    &lt;p class=&quot;fragment&quot;&gt;$FRAGMENT1$&lt;/p&gt;&#10;    &lt;ul&gt;&#10;        &lt;li class=&quot;fragment&quot;&gt;$FRAGMENT2$&lt;/li&gt;&#10;    &lt;/ul&gt;&#10;&lt;/section&gt;" description="Slide with fragmented view" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="HEADER" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="INTRODUCING" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="FRAGMENT1" expression="" defaultValue="" alwaysStopAt="true" />
@@ -56,7 +62,8 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="slimage" value="&lt;section&gt;&#10;    &lt;h2&gt;$HEADER$&lt;/h2&gt;&#10;    &lt;a class=&quot;image&quot; href=&quot;$IMGLINK$&quot; target=&quot;_blank&quot;&gt;&#10;        &lt;img width=&quot;$IMGWIDTH$&quot; height=&quot;$IMGHEIGHT$&quot; src=&quot;$IMGURL$&quot; alt=&quot;$IMGALT$&quot;&gt;&#10;    &lt;/a&gt;&#10;&lt;/section&gt;" description="A Slide with an image" toReformat="true" toShortenFQNames="true">
+  <template name="slimage" value="&lt;section id=&quot;$ID$&quot;&gt;&#10;    &lt;h2&gt;$HEADER$&lt;/h2&gt;&#10;    &lt;a class=&quot;image&quot; href=&quot;$IMGLINK$&quot; target=&quot;_blank&quot;&gt;&#10;        &lt;img width=&quot;$IMGWIDTH$&quot; height=&quot;$IMGHEIGHT$&quot; src=&quot;$IMGURL$&quot; alt=&quot;$IMGALT$&quot;&gt;&#10;    &lt;/a&gt;&#10;&lt;/section&gt;" description="A Slide with an image" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="HEADER" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="IMGLINK" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="IMGWIDTH" expression="" defaultValue="" alwaysStopAt="true" />
