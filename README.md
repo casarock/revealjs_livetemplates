@@ -4,9 +4,11 @@ This repository includes my live templates for [reveal.js](https://github.com/ha
 
 If you want to use these templates, copy `Reveal.xml` to:
 
-Windows: `<your home directory>\.<product name><version number>\config\templates`
-Linux: `~\.<product name><version number>\config\templates`
-MacOS: `~/Library/Preferences/<product name><version number>/templates`
+Windows: `<your home directory>\.<product name><version number>\config\templates`  
+
+Linux: `~\.<product name><version number>\config\templates`   
+
+MacOS: `~/Library/Preferences/<product name><version number>/templates`  
 
 -----
 
