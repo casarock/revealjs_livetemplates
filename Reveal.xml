@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Reveal">
+  <template name="slcode" value="&lt;section&gt;&#10;    &lt;h2&gt;$HEADLINE$&lt;/h2&gt;&#10;    &lt;p&gt;$$DESCRIPTION$&lt;/p&gt;&#10;    &lt;pre&gt;&lt;code data-trim contenteditable&gt;&#10;$CODE$&#10;    &lt;/code&gt;&lt;/pre&gt;&#10;&lt;/section&gt;" description="Section for Code" toReformat="false" toShortenFQNames="true">
+    <variable name="HEADLINE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CODE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="sltitle" value="&lt;section&gt;&#10;    &lt;h1&gt;$HEADER$&lt;/h1&gt;&#10;    &lt;h3&gt;$SUBHEDER$&lt;/h3&gt;&#10;    &lt;p&gt;&#10;        &lt;small&gt;$DISCLAIMER$&lt;/small&gt;&#10;    &lt;/p&gt;&#10;&lt;/section&gt;" description="Title Slide" toReformat="true" toShortenFQNames="true">
+    <variable name="HEADER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SUBHEDER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DISCLAIMER" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="slnote" value="&lt;section&gt;&#10;    &lt;h2&gt;$HEADER$&lt;/h2&gt;&#10;    &lt;p&gt;&#10;        $CONTENT$&#10;    &lt;/p&gt;&#10;&#10;    &lt;aside class=&quot;notes&quot;&gt;&#10;        $SPEAKERNOTE$&#10;    &lt;/aside&gt;&#10;&lt;/section&gt;" description="Slide with a note" toReformat="true" toShortenFQNames="true">
+    <variable name="HEADER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SPEAKERNOTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="sllist" value="&lt;section&gt;&#10;    &lt;h2&gt;$HEADER$&lt;/h2&gt;&#10;    &lt;ul&gt;&#10;        &lt;li&gt;$LISTITEM1$&lt;/li&gt;&#10;        &lt;li&gt;$LISTITEM2$&lt;/li&gt;&#10;        &lt;li&gt;$LISTITEM3$&lt;/li&gt;&#10;    &lt;/ul&gt;&#10;&lt;/section&gt;" description="Slide with a unordered list" toReformat="true" toShortenFQNames="true">
+    <variable name="HEADER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LISTITEM1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LISTITEM2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LISTITEM3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="slidequote" value="&lt;section&gt;&#10;    &lt;h2&gt;$HEADER$&lt;/h2&gt;&#10;    &lt;p&gt;&#10;        $CONTENT$&#10;    &lt;/p&gt;&#10;    &lt;blockquote cite=&quot;$QUOTESOURCE$&quot;&gt;&#10;        &amp;ldquo;$QUOTE$&amp;rdquo;&#10;    &lt;/blockquote&gt;&#10;&lt;/section&gt;" description="A Slide with a blockquote" toReformat="true" toShortenFQNames="true">
+    <variable name="HEADER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="QUOTESOURCE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="QUOTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="slfragmented" value="&lt;section id=&quot;fragments&quot;&gt;&#10;    &lt;h2&gt;$HEADER$&lt;/h2&gt;&#10;    &lt;p&gt;$INTRODUCING$&lt;/p&gt;&#10;    &lt;p class=&quot;fragment&quot;&gt;$FRAGMENT1$&lt;/p&gt;&#10;    &lt;ul&gt;&#10;        &lt;li class=&quot;fragment&quot;&gt;$FRAGMENT2$&lt;/li&gt;&#10;    &lt;/ul&gt;&#10;&lt;/section&gt;" description="Slide with fragmented view" toReformat="true" toShortenFQNames="true">
+    <variable name="HEADER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="INTRODUCING" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FRAGMENT1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FRAGMENT2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="slimage" value="&lt;section&gt;&#10;    &lt;h2&gt;$HEADER$&lt;/h2&gt;&#10;    &lt;a class=&quot;image&quot; href=&quot;$IMGLINK$&quot; target=&quot;_blank&quot;&gt;&#10;        &lt;img width=&quot;$IMGWIDTH$&quot; height=&quot;$IMGHEIGHT$&quot; src=&quot;$IMGURL$&quot; alt=&quot;$IMGALT$&quot;&gt;&#10;    &lt;/a&gt;&#10;&lt;/section&gt;" description="A Slide with an image" toReformat="true" toShortenFQNames="true">
+    <variable name="HEADER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="IMGLINK" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="IMGWIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="IMGHEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="IMGURL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="IMGALT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="slidenoteonly" value="&lt;aside class=&quot;notes&quot;&gt;&#10;    $NOTE$&#10;&lt;/aside&gt;" description="Fragement for a slide note" toReformat="true" toShortenFQNames="true">
+    <variable name="NOTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="revealstart" value="&lt;!doctype html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&#10;    &lt;head&gt;&#10;        &lt;meta charset=&quot;utf-8&quot;&gt;&#10;&#10;        &lt;title&gt;$TITLE$&lt;/title&gt;&#10;&#10;        &lt;meta name=&quot;description&quot; content=&quot;$METADESC$&quot;&gt;&#10;        &lt;meta name=&quot;author&quot; content=&quot;$AUTHOR$&quot;&gt;&#10;&#10;        &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot; /&gt;&#10;        &lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black-translucent&quot; /&gt;&#10;&#10;        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot;&gt;&#10;&#10;        &lt;link rel=&quot;stylesheet&quot; href=&quot;css/reveal.min.css&quot;&gt;&#10;        &lt;link rel=&quot;stylesheet&quot; href=&quot;css/theme/moon.css&quot; id=&quot;theme&quot;&gt;&#10;&#10;        &lt;!-- For syntax highlighting --&gt;&#10;        &lt;link rel=&quot;stylesheet&quot; href=&quot;lib/css/zenburn.css&quot;&gt;&#10;&#10;        &lt;!-- If the query includes 'print-pdf', include the PDF print sheet --&gt;&#10;        &lt;script&gt;&#10;            if( window.location.search.match( /print-pdf/gi ) ) {&#10;                var link = document.createElement( 'link' );&#10;                link.rel = 'stylesheet';&#10;                link.type = 'text/css';&#10;                link.href = 'css/print/pdf.css';&#10;                document.getElementsByTagName( 'head' )[0].appendChild( link );&#10;            }&#10;        &lt;/script&gt;&#10;&#10;        &lt;!--[if lt IE 9]&gt;&#10;        &lt;script src=&quot;lib/js/html5shiv.js&quot;&gt;&lt;/script&gt;&#10;        &lt;![endif]--&gt;&#10;    &lt;/head&gt;&#10;&#10;    &lt;body&gt;&#10;&#10;        &lt;div class=&quot;reveal&quot;&gt;&#10;&#10;            &lt;!-- Any section element inside of this container is displayed as a slide --&gt;&#10;            &lt;div class=&quot;slides&quot;&gt;&#10;                $CONTENT$&#10;            &lt;/div&gt;&#10;&#10;        &lt;/div&gt;&#10;&#10;        &lt;script src=&quot;lib/js/head.min.js&quot;&gt;&lt;/script&gt;&#10;        &lt;script src=&quot;js/reveal.min.js&quot;&gt;&lt;/script&gt;&#10;&#10;        &lt;script&gt;&#10;&#10;            // Full list of configuration options available here:&#10;            // https://github.com/hakimel/reveal.js#configuration&#10;            Reveal.initialize({&#10;                controls: false,&#10;                progress: true,&#10;                history: true,&#10;                center: true,&#10;                theme: 'night',&#10;                transition: 'linear',&#10;                dependencies: [&#10;                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },&#10;                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },&#10;                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },&#10;                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }&#10;                ]&#10;            });&#10;&#10;        &lt;/script&gt;&#10;&#10;    &lt;/body&gt;&#10;&lt;/html&gt;&#10;" description="Create a new presentation (e.g. index.html)" toReformat="true" toShortenFQNames="true">
+    <variable name="TITLE" expression="" defaultValue="TITLE" alwaysStopAt="true" />
+    <variable name="METADESC" expression="" defaultValue="DESC" alwaysStopAt="true" />
+    <variable name="AUTHOR" expression="" defaultValue="AUTHOR" alwaysStopAt="true" />
+    <variable name="CONTENT" expression="" defaultValue="SLIDES" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>
+
